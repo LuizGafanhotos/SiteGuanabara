@@ -1,2 +1,98 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --megacor: #ebe5c5;
+    --cor00: #c5ebd6;
+    --cor01: #83e1ad;
+    --cor02: #3ddc84;
+    --cor03: #2fa866;
+    --cor04: #1a5c37;
+    --cor05: #063d1e;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fucking-fonte: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+
+body{
+    background-color: var(--megacor);
+    font-family: var(--fonte-padrão);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > h1{
+    color: white;
+    font-family: var(--fucking-fonte);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+header > p{
+    color: white;
+    font-family: var(--fonte-padrão);
+    max-width: 600px;
+    font-size: 1.2rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+nav {
+    background-color: var(--cor05);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.301);
+}
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav > a:hover{
+    transition: 0.5s ease;
+    border-radius: 5px;
+    background-color: var(--cor02);
+    color: var(--cor05);
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 1px 2px 3px 1px rgb(0 0 0 / 57%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+}
+main img{
+    width: 100%;
+}
+main img.pequeno{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+main h1{
+    color: var(--cor04);
+    font-family: var(--fonte-android);
+}
+footer{
+    background-color: var(--cor05);
+    color: white;
+}
